@@ -6,8 +6,8 @@ on:
     branches:
       - devel
   schedule:
-    # build every 12 hours
-    - cron: '0 */12 * * *'
+    # build every sunday.
+    - cron: '0 0 * * SUN'
 
 jobs:
   build_and_push_latest:
